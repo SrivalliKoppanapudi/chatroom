@@ -9,7 +9,7 @@ app.use(cors())
 const { Server } = require("socket.io")
 const io=new Server(server,{
     cors:{
-        origin:"http://localhost:5173",//which server makes calls to our socket io--url of our application---react running port url
+        origin:"https://chatroom-client-7eax.onrender.com",//which server makes calls to our socket io--url of our application---react running port url
         methods:["GET","POST"],
         credentials:true
     }
